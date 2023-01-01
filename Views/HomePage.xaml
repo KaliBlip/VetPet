@@ -4,7 +4,7 @@
              xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
             xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui"
              x:Class="VetPet.Views.HomePage"
-             Title="HomePage">
+             Title="Home">
     <ScrollView>
         <VerticalStackLayout Padding="12" Spacing="16">
            <Grid Padding="2" ColumnSpacing="0">
