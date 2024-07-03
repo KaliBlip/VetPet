@@ -1,4 +1,4 @@
-namespace MauiApp1;
+namespace VetPet;
 
 public partial class SignUp : ContentPage
 {
@@ -6,4 +6,6 @@ public partial class SignUp : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	
 }

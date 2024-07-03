@@ -1,4 +1,4 @@
-namespace MauiApp1;
+namespace VetPet;
 
 public partial class Home : ContentPage
 {

@@ -3,6 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VetPet.MainPage">
 
-    
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Text="VetPet" FontSize="36" TextColor="#1E73FF" HorizontalOptions="Center" VerticalOptions="End" Margin="0,40,0,40"/>
+
+        <Entry Grid.Row="1" Placeholder="Enter Your Name" x:Name="NameEntry" Margin="0,10,0,10"/>
+        <Entry Grid.Row="2" Placeholder="Enter Your Email" x:Name="EmailEntry" Keyboard="Email" Margin="0,10,0,10"/>
+        <Entry Grid.Row="3" Placeholder="Enter Your Password" x:Name="PasswordEntry" IsPassword="True" Margin="0,10,0,10"/>
+
+        <Button Grid.Row="4" Text="SIGN UP" BackgroundColor="#1E73FF" TextColor="White" CornerRadius="5" Margin="0,20,0,0"
+                />
+
+        <Label Grid.Row="5" Text="OR CONTINUE WITH" HorizontalOptions="Center" Margin="0,30,0,10"/>
+        
+        <StackLayout Grid.Row="6" Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="GOOGLE" BackgroundColor="#DB4437" TextColor="White" CornerRadius="5" WidthRequest="120" Margin="5"/>
+            <Button Text="APPLE" BackgroundColor="#000000" TextColor="White" CornerRadius="5" WidthRequest="120" Margin="5"/>
+        </StackLayout>
+
+        <Label Grid.Row="7" Text="Already Have An Account? Sign In" HorizontalOptions="Center" TextColor="#1E73FF" Margin="0,30,0,0">
+            
+        </Label>
+    </Grid>
 
 </ContentPage>
