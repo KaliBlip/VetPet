@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="VetPet.View.Social"
-             Title="NewPage1">
+             x:Class="VetPet.View.Social">
+    
     <Grid Padding="20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -17,7 +17,37 @@
         </Grid.RowDefinitions>
         
         
-        
+        <!-- Header -->
+
+        <HorizontalStackLayout Spacing="70" BackgroundColor="Beige" Padding="10" Grid.Row="0">
+            <HorizontalStackLayout>
+                <Frame CornerRadius="50" HeightRequest="50" WidthRequest="60">
+                    <Image Source="dotnet_bot" Aspect="AspectFit" HeightRequest="100"  WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center"  />
+
+                </Frame>
+                <VerticalStackLayout>
+                    <Label Text="Welcome" FontSize="Medium" FontFamily="KanitLight"/>
+                    <Label Text="Momo Omoni" FontFamily="KaniteBold" FontAttributes="Bold" FontSize="17"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+           
+            <HorizontalStackLayout>
+                <Image Source="dotnet_bot" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center"  />
+                <Image Source="dotnet_bot" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center"  />
+
+            </HorizontalStackLayout>
+        </HorizontalStackLayout>
+
+        <Grid Grid.Row="1" Padding="10">
+            <HorizontalStackLayout Spacing="10">
+                <Frame CornerRadius="50" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="dotnet_bot" Aspect="Fill"/>
+                </Frame>
+                <Frame CornerRadius="50" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="dotnet_bot" Aspect="Fill"/>
+                </Frame>
+            </HorizontalStackLayout>
+        </Grid>
         
         
         
