@@ -11,10 +11,9 @@
     <MauiXaml Update="View\Controls.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="View\SocialPage.xaml">
+    <MauiXaml Update="View\Social.xaml">
       <SubType>Designer</SubType>
-    </None>
+    </MauiXaml>
   </ItemGroup>
+  <ItemGroup />
 </Project>
