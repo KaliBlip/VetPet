@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|c:\\users\\nketia jeffred\\source\\repos\\vetpet\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|solutionrelative:view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|c:\\users\\nketia jeffred\\source\\repos\\vetpet\\view\\signin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|solutionrelative:view\\signin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|c:\\users\\nketia jeffred\\source\\repos\\vetpet\\view\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|solutionrelative:view\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|c:\\users\\nketia jeffred\\source\\repos\\vetpet\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|c:\\users\\nketia jeffred\\source\\repos\\vetpet\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|c:\\users\\nketia jeffred\\source\\repos\\vetpet\\view\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|solutionrelative:view\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|c:\\users\\nketia jeffred\\source\\repos\\vetpet\\view\\controls.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26F38464-9090-4BE0-929D-4F1F5CFDDE2F}|VetPet.csproj|solutionrelative:view\\controls.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T19:37:11.954Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Controls.xaml",
+              "DocumentMoniker": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\Controls.xaml",
+              "RelativeDocumentMoniker": "View\\Controls.xaml",
+              "ToolTip": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\Controls.xaml",
+              "RelativeToolTip": "View\\Controls.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-04T20:37:06.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\Home.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Home.xaml.cs",
+              "ToolTip": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\Home.xaml.cs",
+              "RelativeToolTip": "View\\Home.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T20:01:24.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\Home.xaml",
+              "RelativeDocumentMoniker": "View\\Home.xaml",
+              "ToolTip": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\Home.xaml*",
+              "RelativeToolTip": "View\\Home.xaml*",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-04T19:37:39.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T21:58:55.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignUp.xaml",
+              "DocumentMoniker": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\SignUp.xaml",
+              "RelativeDocumentMoniker": "View\\SignUp.xaml",
+              "ToolTip": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\SignUp.xaml",
+              "RelativeToolTip": "View\\SignUp.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-04T21:21:10.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignIn.xaml",
+              "DocumentMoniker": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\SignIn.xaml",
+              "RelativeDocumentMoniker": "View\\SignIn.xaml",
+              "ToolTip": "C:\\Users\\NKETIA JEFFRED\\source\\repos\\VetPet\\View\\SignIn.xaml",
+              "RelativeToolTip": "View\\SignIn.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-04T20:00:11.15Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

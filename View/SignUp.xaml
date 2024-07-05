@@ -1,43 +1,116 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+
+             
              x:Class="VetPet.SignUp"
              BackgroundColor="White">
-   <Grid Padding="20">
+    
+    <Grid Padding="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
-        <Label Grid.Row="0" Text="VetPet" FontSize="36" TextColor="#1E73FF" HorizontalOptions="Center" VerticalOptions="End" Margin="0,40,0,40"/>
 
-        <Entry Grid.Row="1" Placeholder="Enter Your Name" x:Name="NameEntry" Margin="0,10,0,10"/>
-        <Entry Grid.Row="2" Placeholder="Enter Your Email" x:Name="EmailEntry" Keyboard="Email" Margin="0,10,0,10"/>
-        <Entry Grid.Row="3" Placeholder="Enter Your Password" x:Name="PasswordEntry" IsPassword="True" Margin="0,10,0,10"/>
+        <Label 
+             Text="VetPet"
+             FontSize="50"
+            FontFamily="GaMaamli"
+             TextColor="#1E73FF"
+            FontAttributes="Bold"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             Margin="0,40,0,40"/>
 
-        <Button Grid.Row="4" Text="SIGN UP" BackgroundColor="#1E73FF" TextColor="White" CornerRadius="5" Margin="0,20,0,0"
-                />
 
-        <Label Grid.Row="5" Text="OR CONTINUE WITH" HorizontalOptions="Center" Margin="0,30,0,10"/>
-        
-        <StackLayout Grid.Row="6" Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Text="GOOGLE" BackgroundColor="#DB4437" TextColor="White" CornerRadius="5" WidthRequest="120" Margin="5"/>
-            <Button Text="APPLE" BackgroundColor="#000000" TextColor="White" CornerRadius="5" WidthRequest="120" Margin="5"/>
+        <material:TextField
+        Grid.Row="1"
+        x:Name="FullnameEntry"
+            FontFamily="RobotoBold"
+            Title="Full Name*"
+Margin="0,10,0,10"/>
+
+        <material:TextField
+        Grid.Row="2"
+        x:Name="EmailEntry"
+        Title="Email*"
+        Keyboard="Email"
+        Margin="0,10,0,10"/>
+
+
+
+        <material:TextField
+             Grid.Row="3"
+             Title="Password*"
+             x:Name="PasswordEntry"
+             IsPassword="True"
+             Margin="0,10,0,10"/>
+
+
+        <Button Grid.Row="4"
+             x:Name="signin"
+             Text="SIGN IN"
+            FontAttributes="Bold"
+             BackgroundColor="#1E73FF"
+             TextColor="White"
+             CornerRadius="30"
+                HeightRequest="55"
+             Margin="0,20,0,0"/>
+
+        <Label Grid.Row="5"
+             Text="Forgot Password?"
+             HorizontalOptions="End"
+             TextColor="#1E73FF"
+               FontAttributes="Bold"
+             Margin="0,0,0,0"/>
+
+        <Label Grid.Row="6"
+             Text="OR CONTINUE WITH"
+             HorizontalOptions="Center"
+               FontAttributes="Bold"
+             Margin="0,30,0,10"/>
+
+        <StackLayout Grid.Row="7"
+             Orientation="Horizontal"
+             HorizontalOptions="Center">
+            <Button Text="GOOGLE"
+                 BackgroundColor="Orange"
+                 TextColor="White"
+                 CornerRadius="30"
+                    HeightRequest="55"
+                    FontAttributes="Bold"
+                 WidthRequest="160"
+                 Margin="5"/>
+            <Button Text="APPLE"
+                 BackgroundColor="black"
+                 TextColor="White"
+                    FontAttributes="Bold"
+                 CornerRadius="30"
+                 WidthRequest="160"
+                    HeightRequest="55"
+                 Margin="5"/>
         </StackLayout>
 
-        <Label Grid.Row="7" Text="Already Have An Account? Sign In" HorizontalOptions="Center" TextColor="#1E73FF" Margin="0,30,0,0">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer />
-            </Label.GestureRecognizers>
+        <Label Grid.Row="8"
+             Text="Already Have An Account? Sign Up"
+             HorizontalOptions="Center"
+               FontAttributes="Bold"
+             TextColor="#1E73FF"
+             Margin="0,30,0,0"
+            >
+
         </Label>
     </Grid>
 </ContentPage>
