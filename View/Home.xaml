@@ -36,17 +36,17 @@
                 <Grid BackgroundColor="#F0F0F0" Padding="10" >
                     <Image Source="doctor_image.png" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" />
                     <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" Padding="10,0">
-                        <Label Text="Dr. Smith" FontAttributes="Bold" FontSize="16" />
+                    <Label Text="Dr. Smith" FontAttributes="Bold" FontSize="16" FontFamily="KanitBold" />
                         <Label Text="Chicago, USA" FontSize="14" />
                         <Label Text="AUG 15, 10:00AM" FontSize="14" FontAttributes="Italic" />
                     </StackLayout>
-                    <Button Text="See All" VerticalOptions="Center" HorizontalOptions="End" />
+                <Button Text="See All" FontFamily="KanitBold" VerticalOptions="Center" HorizontalOptions="End" />
                 </Grid>
             </StackLayout>
 
             <!-- Offers -->
             <StackLayout Grid.Row="3" Padding="0,10">
-                <Label Text="Offers" FontAttributes="Bold" FontSize="18" />
+                <Label Text="Offers" FontAttributes="Bold" FontSize="18" FontFamily="KanitBold" />
                 <Grid BackgroundColor="#FFDD00" Padding="10" >
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                         <Label Text="Get 35% Off on Grooming" FontAttributes="Bold" FontSize="16" HorizontalOptions="StartAndExpand" />

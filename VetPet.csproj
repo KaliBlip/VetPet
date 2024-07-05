@@ -58,6 +58,24 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\GaMaamli-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Black.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-BlackItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-BoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ExtraBold.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ExtraBoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ExtraLight.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ExtraLightItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Italic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Light.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-LightItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Medium.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-MediumItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-SemiBold.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-SemiBoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Thin.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ThinItalic.ttf" />
 	  <None Remove="Resources\Fonts\MaterialIcons-Regular.ttf" />
 	</ItemGroup>
 
