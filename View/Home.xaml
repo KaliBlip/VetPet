@@ -4,7 +4,7 @@
              x:Class="VetPet.Home">
     
     
-    <Grid RowSpacing="10" Padding="10">
+    <Grid RowSpacing="10" Padding="20">
         <!-- Define the rows and columns -->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -24,81 +24,132 @@
 
    
         <!-- Header -->
-        <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <StackLayout Grid.Row="0" Orientation="Horizontal" 
+                         HorizontalOptions="FillAndExpand">
+
+                <Image Source="dotnet_bot.png" WidthRequest="70" 
+                       HeightRequest="70" VerticalOptions="Center" />
                 
-                <Image Source="dotnet_bot.png" WidthRequest="70" HeightRequest="70" VerticalOptions="Center" />
-                <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" Padding="10,0">
-                <Label Text="Hi, Annie Adams" FontAttributes="Bold" FontSize="20" FontFamily="KanitBold" />
-                <Label Text="How is Your Pet Health?" FontSize="14"  FontFamily="KanitLight"/>
+                <StackLayout Orientation="Vertical" 
+                             HorizontalOptions="StartAndExpand" Padding="10,0">
+                    
+                    <Label Text="Hi, Annie Adams" 
+                           FontAttributes="Bold" FontSize="20" FontFamily="KanitBold" />
+                    
+                    <Label Text="How is Your Pet Health?"
+                           FontSize="14" 
+                           FontFamily="KanitLight"/>
+                    
                 </StackLayout>
-            <Image Source="dotnet_bot.png"  WidthRequest="70" HeightRequest="70" VerticalOptions="Center" HorizontalOptions="Start" />
+                <Image Source="dotnet_bot.png"  WidthRequest="70" 
+                       HeightRequest="70" VerticalOptions="Center" 
+                       HorizontalOptions="Start" />
 
-           </StackLayout>
+            </StackLayout>
 
+       
         <!-- Search Bar -->
         <SearchBar Grid.Row="1" Placeholder="Search what you need..." />
 
+        
+        
         <!-- Upcoming Schedule -->
-        <StackLayout Grid.Row="2" Padding="0,10"
-                         Margin="0,30,0,0"
+        <StackLayout Grid.Row="2" 
                          Spacing="50">
-            <StackLayout Orientation="Horizontal" Spacing="100">
-                <Label Text="Upcoming Schedule" FontAttributes="Bold" FontSize="18"/>
-                <Button Text="See All" FontFamily="KanitBold" VerticalOptions="Center" HorizontalOptions="End" />
-            </StackLayout>
-            
-            <Frame>
-                <Grid Padding="10" >
-                    <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" Padding="10,0">
-                        <Image Source="doctor_image.png" WidthRequest="50" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="Start" />
-
-                        <Label Text="Dr. Smith" FontAttributes="Bold" FontSize="16" FontFamily="KanitBold" />
-                        <Label Text="Chicago, USA" FontSize="14" />
-                        <Label Text="AUG 15, 10:00AM" FontSize="14" FontAttributes="Italic" />
-                    </StackLayout>
-                </Grid>
-            </Frame>
-           
+            <HorizontalStackLayout  Spacing="100" Padding="30,0,0,0">
+                <Label Text="Upcoming Schedule" FontAttributes="Bold" 
+                       FontFamily="KanitLight" FontSize="16"/>
+                
+                <Button Text="See All" FontFamily="KanitBold" 
+                        VerticalOptions="Center" HorizontalOptions="End" />
+                
+            </HorizontalStackLayout>
         </StackLayout>
 
 
-        <!-- Offers -->
+        <!-- Doctor Info's-->
         <Frame Grid.Row="3">
-            <StackLayout Grid.Row="3" Padding="0,10"
-                  Spacing="30"
-                   Margin="0,30,0,0">
-                <Label Text="Offers" FontAttributes="Bold" FontSize="18" FontFamily="KanitBold" />
-
-                <Grid BackgroundColor="#FFDD00" Padding="30">
-
-                        <StackLayout Orientation="Vertical"  
-                              HorizontalOptions="FillAndExpand"
-                              Spacing="30">
-                        <Label Text=" Off on Grooming"/>
-                        <Label Text="Get 35%" FontAttributes="Bold" FontFamily="KanitBold" FontSize="55" HorizontalOptions="StartAndExpand" />
-                        <Button Text="Grab Offer"  CornerRadius="10" BackgroundColor="#FFFFFF" TextColor="#000000" HeightRequest="40" WidthRequest="130"/>
+            <Grid Padding="10" >
+                <StackLayout Orientation="Horizontal" 
+                             VerticalOptions="End"
+                             HorizontalOptions="CenterAndExpand" 
+                             Padding="0,0" Spacing="60">
+                    
+                    <StackLayout Spacing="9">
+                        <StackLayout>
+                            <Label Text="Dr. Smith" FontAttributes="Bold" 
+                                FontSize="16" FontFamily="KanitBold" />
+                            <Label Text="Chicago, USA" FontSize="14" />
                         </StackLayout>
-
-                </Grid>
-
-            </StackLayout>
-
+                        <Button Text="AUG 15, 10:00AM" FontSize="14" />
+                    </StackLayout>
+                    
+                    <!-- Doctor Image-->
+                    <Image Source="dotnet_bot.png" 
+                        WidthRequest="110" HeightRequest="100" 
+                        VerticalOptions="End" HorizontalOptions="Center" />
+                </StackLayout>
+            </Grid>
         </Frame>
-       
 
+        <!-- Offers -->
+        <Frame Grid.Row="4">
+            <StackLayout Grid.Row="3"
+                  Spacing="10">
+                <Label Text="Offers" FontAttributes="Bold" 
+                       FontSize="18" FontFamily="KanitBold" />
+               
+                <Frame BackgroundColor="#FFDD00" Padding="10">
+
+                    <ScrollView Orientation="Horizontal">
+
+                            <VerticalStackLayout  
+                                HorizontalOptions="FillAndExpand">
+                                <Label Text=" Off on Grooming" FontFamily="KanitExtraBold"/>
+                                <!-- Get 35%  -->
+                                    <Label Text="Get 35%" FontAttributes="Bold" 
+                                        FontFamily="KanitBold" FontSize="55" 
+                                        HorizontalOptions="StartAndExpand" />
+                                    <Button Text="Grab Offer"  CornerRadius="10" 
+                                        HorizontalOptions="Start"
+                                        BackgroundColor="#FFFFFF" TextColor="#000000" 
+                                        HeightRequest="40" WidthRequest="130"/>
+                            </VerticalStackLayout>
+                        
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+        </Frame>
 
 
         <!-- Book Appointment -->
-        <StackLayout Grid.Row="4" Padding="0,10"
-                          Margin="0,30,0,0"
-                         Spacing="30">
-            <Label Text="Book Appointment" FontAttributes="Bold" FontSize="18" />
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
-                              Margin="0,30,0,0">
-                <Image Source="dotnet_bot.png" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" />
-                <Button Text="Choose Your Companion" HorizontalOptions="FillAndExpand"  Margin="0,30,0,0"/>
-            </StackLayout>
+        <Frame Grid.Row="5">
+            <HorizontalStackLayout Grid.Row="4"
+                 Spacing="30">
+                <Image Source="dotnet_bot" HeightRequest="20"
+                       HorizontalOptions="Start" WidthRequest="50"/>
+                
+                <Label Text="Book Appointment" 
+                   FontFamily="KanitBold"
+                       VerticalOptions="Center"
+                   FontAttributes="Bold" FontSize="18" />
+                
+            </HorizontalStackLayout>
+        </Frame>
+
+
+
+        <StackLayout Orientation="Horizontal"
+                     Grid.Row="6"
+            HorizontalOptions="FillAndExpand">
+            <Image Source="dotnet_bot.png" 
+                WidthRequest="50" 
+                HeightRequest="50" 
+                VerticalOptions="Center" />
+            <Button Text="Choose Your Companion" 
+                HorizontalOptions="FillAndExpand"  Margin="0,30,0,0"/>
         </StackLayout>
+
     </Grid>
 </ContentPage>
 

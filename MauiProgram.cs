@@ -31,8 +31,6 @@ public static class MauiProgram
                 fonts.AddFont("Kanit-Light.ttf", "KanitLight");
                 fonts.AddFont("Kanit-ExtraLight.ttf", "KanitExtraLight");
 
-
-
             });
 
 #if DEBUG

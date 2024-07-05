@@ -12,4 +12,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
+  <ItemGroup>
+    <None Update="View\SocialPage.xaml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
 </Project>
