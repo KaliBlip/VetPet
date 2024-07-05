@@ -6,4 +6,9 @@ public partial class Home : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Download_Clicked(object sender, EventArgs e)
+    {
+		Navigation.PushModalAsync(new SignIn());
+    }
 }

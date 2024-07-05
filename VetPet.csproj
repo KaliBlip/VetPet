@@ -57,14 +57,77 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\GaMaamli-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Black.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-BlackItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-BoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ExtraBold.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ExtraBoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ExtraLight.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ExtraLightItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Italic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Light.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-LightItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Medium.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-MediumItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-SemiBold.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-SemiBoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-Thin.ttf" />
+	  <None Remove="Resources\Fonts\Kanit-ThinItalic.ttf" />
+	  <None Remove="Resources\Fonts\MaterialIcons-Regular.ttf" />
+	  <None Remove="Resources\Images\k.png" />
+	  <None Remove="Resources\Images\l.png" />
+	  <None Remove="Resources\Images\m.png" />
+	  <None Remove="Resources\Images\n.png" />
+	  <None Remove="Resources\Images\o.png" />
+	  <None Remove="Resources\Images\p.png" />
+	  <None Remove="Resources\Images\q.png" />
+	  <None Remove="Resources\Images\r.png" />
+	  <None Remove="Resources\Images\s.png" />
+	  <None Remove="Resources\Images\t.png" />
+	  <None Remove="Resources\Images\u.png" />
+	  <None Remove="Resources\Images\v.png" />
+	  <None Remove="Resources\Images\w.png" />
+	  <None Remove="Resources\Images\x.png" />
+	  <None Remove="Resources\Images\y.png" />
+	  <None Remove="Resources\Images\z.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="UraniumUI.Icons.MaterialIcons" Version="2.8.1" />
+		<PackageReference Include="UraniumUI.Material" Version="2.8.1" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="Model/" />
+	  <Folder Include="Resources\Import\" />
 	  <Folder Include="ViewModel/" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="View\Social.xaml.cs">
+	    <DependentUpon>Social.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\Controls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Social.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="View\SocialPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
 	</ItemGroup>
 
 </Project>

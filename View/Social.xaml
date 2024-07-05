@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="VetPet.View.Social">
+    
+    
+    <ScrollView>
+        <Grid Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            
+            <!-- Header -->
+            <HorizontalStackLayout Spacing="70" BackgroundColor="Beige" Padding="10" Grid.Row="0">
+                <HorizontalStackLayout>
+                    <Frame CornerRadius="50" HeightRequest="50" WidthRequest="60">
+                        <Image Source="b" Aspect="AspectFit" HeightRequest="100" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Frame>
+                    <VerticalStackLayout>
+                        <Label Text="Welcome" FontSize="Medium" FontFamily="KanitLight" />
+                        <Label Text="Momo Omoni" FontFamily="KaniteBold" FontAttributes="Bold" FontSize="17" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Image Source="b" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
+                    <Image Source="/Import/10002.png" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>
+
+
+            <!-- Horizontal ScrollView for Images--> 
+            <ScrollView Orientation="Horizontal" Grid.Row="1" Padding="10" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                <HorizontalStackLayout Spacing="10">
+                    <VerticalStackLayout>
+                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="v" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                        </Frame>
+                        <Label Text="Cat" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="KaniteBold" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="b" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                        </Frame>
+                        <Label Text="Popo" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="KaniteBold" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="d" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                        </Frame>
+                        <Label Text="Bull Dog" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="KaniteBold" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="g" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                        </Frame>
+                        <Label Text="Canny" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="KaniteBold" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="h" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                        </Frame>
+                        <Label Text="D-Dog" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="KaniteBold" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="k" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                        </Frame>
+                        <Label Text="Bear" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="KaniteBold" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="j" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                        </Frame>
+                        <Label Text="Eagle" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="KaniteBold" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="l" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                        </Frame>
+                        <Label Text="Fox" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="KaniteBold" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </ScrollView>
+            
+            <!-- Feeds Page -->
+            <VerticalStackLayout Spacing="10" Grid.Row="2">
+                <Frame>
+                    <HorizontalStackLayout Spacing="70" BackgroundColor="Beige" Padding="10" Grid.Row="0">
+                        <HorizontalStackLayout>
+                            <Frame CornerRadius="50" HeightRequest="50" WidthRequest="60">
+                                <Image Source="b" Aspect="AspectFit" HeightRequest="100" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </Frame>
+                            <VerticalStackLayout>
+                                <Label Text="Welcome" FontSize="Medium" FontFamily="KanitLight" />
+                                <Label Text="Momo Omoni" FontFamily="KaniteBold" FontAttributes="Bold" FontSize="17" />
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Image Source="b" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
+                            <Image Source="/Import/10002.png" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                    
+                    
+                    
+                    
+                    
+                    
+                </Frame>
+                <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="e" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                </Frame>
+                <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="e" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                </Frame>
+                <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="e" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
+                </Frame>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

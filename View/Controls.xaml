@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui"
+             
+             x:Class="VetPet.View.Controls"
+             Title="Controls">
+
+    <uranium:GridLayout Margin="20"
+        RowCount="6"
+        ColumnCount="2" 
+        ColumnSpacing="16" 
+        RowSpacing="16"
+        ColumnGridLength="120"
+        RowGridLength="120">
+        <BoxView Color="Red" />
+        <VerticalStackLayout>
+            <BoxView Color="Green" />
+            <BoxView Color="Blue" />
+            <BoxView Color="Yellow" />
+            <BoxView Color="Green" />
+        </VerticalStackLayout>
+       
+        <BoxView Color="Blue" />
+        <BoxView Color="Yellow" />
+        <BoxView Color="Green" />
+        <BoxView Color="Blue" />
+        <BoxView Color="Yellow" />
+    </uranium:GridLayout>
+
+
+</ContentPage>

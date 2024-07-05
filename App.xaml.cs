@@ -1,4 +1,6 @@
-﻿namespace VetPet;
+﻿using System.Windows;
+
+namespace VetPet;
 
 public partial class App : Application
 {
@@ -6,6 +8,8 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
-	}
+		//MainPage = new MainPage();
+		MainPage = new NavigationPage(new View.Social());
+
+    }
 }
