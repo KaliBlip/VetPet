@@ -28,7 +28,10 @@ public static class MauiProgram
                 fonts.AddFont("Kanit-Bold.ttf", "KanitBold");
                 fonts.AddFont("Kanit-ExtraBold.ttf", "KanitExtraBold");
                 fonts.AddFont("Kanit-ExtraBoldItalic.ttf", "KanitExtraBoldItalic");
-                
+                fonts.AddFont("Kanit-Light.ttf", "KanitLight");
+                fonts.AddFont("Kanit-ExtraLight.ttf", "KanitExtraLight");
+
+
 
             });
 

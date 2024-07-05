@@ -7,3 +7,6 @@
 .vs/VetPet/FileContentIndex/4b9f491d-ef39-4360-8865-8c69d921e05e.vsidx
 /.vs/VetPet/FileContentIndex
 /bin/Debug
+/.vs
+/bin
+/obj

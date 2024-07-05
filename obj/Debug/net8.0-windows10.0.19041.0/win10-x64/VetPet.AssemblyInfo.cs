@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VetPet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f9b190e12869f2a4ec4737a276e09728bc8a0e63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c6f419ac8a7da3ddb2870cbda2cf3745e423152a")]
 [assembly: System.Reflection.AssemblyProductAttribute("VetPet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VetPet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
