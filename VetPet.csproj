@@ -77,6 +77,22 @@
 	  <None Remove="Resources\Fonts\Kanit-Thin.ttf" />
 	  <None Remove="Resources\Fonts\Kanit-ThinItalic.ttf" />
 	  <None Remove="Resources\Fonts\MaterialIcons-Regular.ttf" />
+	  <None Remove="Resources\Images\k.png" />
+	  <None Remove="Resources\Images\l.png" />
+	  <None Remove="Resources\Images\m.png" />
+	  <None Remove="Resources\Images\n.png" />
+	  <None Remove="Resources\Images\o.png" />
+	  <None Remove="Resources\Images\p.png" />
+	  <None Remove="Resources\Images\q.png" />
+	  <None Remove="Resources\Images\r.png" />
+	  <None Remove="Resources\Images\s.png" />
+	  <None Remove="Resources\Images\t.png" />
+	  <None Remove="Resources\Images\u.png" />
+	  <None Remove="Resources\Images\v.png" />
+	  <None Remove="Resources\Images\w.png" />
+	  <None Remove="Resources\Images\x.png" />
+	  <None Remove="Resources\Images\y.png" />
+	  <None Remove="Resources\Images\z.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -89,6 +105,7 @@
 
 	<ItemGroup>
 	  <Folder Include="Model/" />
+	  <Folder Include="Resources\Import\" />
 	  <Folder Include="ViewModel/" />
 	</ItemGroup>
 
