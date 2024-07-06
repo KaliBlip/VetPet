@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="VetPet.View.Social">
+             x:Class="VetPet.View.Social"
+             BackgroundColor="White">
     
     
     <ScrollView>
         <Grid Padding="20">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -20,7 +21,7 @@
             
             
             <!-- Header -->
-            <HorizontalStackLayout Spacing="70" BackgroundColor="Beige" Padding="10" Grid.Row="0">
+            <HorizontalStackLayout Spacing="70" Padding="10" Grid.Row="0">
                 <HorizontalStackLayout Spacing="5">
                     <Frame CornerRadius="50" HeightRequest="50" WidthRequest="60">
                         <Image Source="d" Aspect="AspectFit" HeightRequest="100" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
@@ -93,12 +94,59 @@
             
             <!-- Feeds Page -->
             <VerticalStackLayout Grid.Row="3" Spacing="10">
+                <Frame  CornerRadius="65" Grid.Row="5" BackgroundColor="LightGray" >
+                    <StackLayout Spacing="10" Padding="5">
+                        <HorizontalStackLayout Spacing="70" Padding="5" Grid.Row="0">
+                            <HorizontalStackLayout Spacing="5">
+                                <Frame CornerRadius="20" HeightRequest="40" WidthRequest="50">
+                                    <Image Source="p" Aspect="AspectFit" HeightRequest="90" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
+                                </Frame>
+                                <VerticalStackLayout>
+                                    <Label Text="KaliBoi" FontSize="Medium" FontFamily="KanitBold"  />
+                                    <Label Text="20M Lovers" FontFamily="GaMaamli" FontAttributes="Bold" FontSize="12" TextColor="Gray" />
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <!--<Image Source="b" Aspect="Fill" HeightRequest="30" HorizontalOptions="Start" VerticalOptions="Center" />
+                                <Image Source="j.png" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />-->
+                            </HorizontalStackLayout>
+
+                            <!--Discription of Feed post-->
+                        </HorizontalStackLayout>
+                        <Label Margin="20,0,0,0" Text="Feed discription will appear here and her so thw kogi goe to schooli  in the mor......"
+                    FontFamily="KanitBold"/>
+
+                        <!--Feed Image view-->
+                        <Frame CornerRadius="50" HeightRequest="330" WidthRequest="330">
+                            <Image Source="p" Aspect="AspectFit" HeightRequest="900" WidthRequest="680" HorizontalOptions="Center" VerticalOptions="Center" />
+                        </Frame>
+                        <!--<HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+                 <Button Text="Like"/>
+                 <Button Text="Comment"/>
+                 <Button Text="Share"/>
+             </HorizontalStackLayout>-->
+                        <Grid ColumnSpacing="10" HorizontalOptions="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Grid.Column="1" Text="Like" BackgroundColor="Purple"/>
+                            <Button Grid.Column="2" Text="Comment" BackgroundColor="Green"/>
+                            <Button  Grid.Column="3" Text="Share"/>
+                        </Grid>
+
+                    </StackLayout>
+                </Frame>
+
                 <Frame  CornerRadius="75" Grid.Row="3" >
                     <StackLayout Spacing="10" Padding="5">
                         <HorizontalStackLayout Spacing="70" Padding="5" Grid.Row="0">
                             <HorizontalStackLayout Spacing="5">
                                 <Frame CornerRadius="50" HeightRequest="40" WidthRequest="50">
-                                    <Image Source="d" Aspect="AspectFit" HeightRequest="90" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
+                                    <Image Source="r" Aspect="AspectFit" HeightRequest="90" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
                                 </Frame>
                                 <VerticalStackLayout>
                                     <Label Text="Welcome" FontSize="Small" FontFamily="KanitLight" />
@@ -106,8 +154,8 @@
                                 </VerticalStackLayout>
                             </HorizontalStackLayout>
                             <HorizontalStackLayout>
-                                <Image Source="b" Aspect="Fill" HeightRequest="30" HorizontalOptions="Start" VerticalOptions="Center" />
-                                <Image Source="j.png" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
+                                <!--<Image Source="b" Aspect="Fill" HeightRequest="30" HorizontalOptions="Start" VerticalOptions="Center" />
+                                <Image Source="j.png" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />-->
                             </HorizontalStackLayout>
 
                             <!--Discription of Feed post-->
@@ -139,52 +187,19 @@
 
                     </StackLayout>
                 </Frame>
-                <Frame  CornerRadius="75" Grid.Row="5" >
-                    <StackLayout Spacing="10" Padding="5">
-                        <HorizontalStackLayout Spacing="70" Padding="5" Grid.Row="0">
-                            <HorizontalStackLayout Spacing="5">
-                                <Frame CornerRadius="50" HeightRequest="40" WidthRequest="50">
-                                    <Image Source="d" Aspect="AspectFit" HeightRequest="90" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
-                                </Frame>
-                                <VerticalStackLayout>
-                                    <Label Text="Welcome" FontSize="Small" FontFamily="KanitLight" />
-                                    <Label Text="Momo Omoni" FontFamily="KaniteBold" FontAttributes="Bold" FontSize="14" />
-                                </VerticalStackLayout>
-                            </HorizontalStackLayout>
-                            <HorizontalStackLayout>
-                                <Image Source="b" Aspect="Fill" HeightRequest="30" HorizontalOptions="Start" VerticalOptions="Center" />
-                                <Image Source="j.png" Aspect="Fill" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
-                            </HorizontalStackLayout>
-
-                            <!--Discription of Feed post-->
-                        </HorizontalStackLayout>
-                        <Label Margin="20,0,0,0" Text="Feed discription will appear here and her so thw kogi goe to schooli  in the mor......"
-                    FontFamily="KanitBold"/>
-
-                        <!--Feed Image view-->
-                        <Frame CornerRadius="50" HeightRequest="300" WidthRequest="330">
-                            <Image Source="i" Aspect="AspectFit" HeightRequest="900" WidthRequest="680" HorizontalOptions="Center" VerticalOptions="Center" />
-                        </Frame>
-                        <!--<HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
-                 <Button Text="Like"/>
-                 <Button Text="Comment"/>
-                 <Button Text="Share"/>
-             </HorizontalStackLayout>-->
-                        <Grid ColumnSpacing="10" HorizontalOptions="Center">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-
-                            <Button Grid.Column="1" Text="Like"/>
-                            <Button Grid.Column="2" Text="Comment"/>
-                            <Button  Grid.Column="3" Text="Share"/>
-                        </Grid>
-
-                    </StackLayout>
-                </Frame>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
 
             </VerticalStackLayout>
            
