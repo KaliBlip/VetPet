@@ -19,9 +19,9 @@
             <!-- Header -->
             <HorizontalStackLayout Spacing="70" Padding="10" Grid.Row="0">
                 <HorizontalStackLayout Spacing="5">
-                    <Frame CornerRadius="50" HeightRequest="50" WidthRequest="60">
+                    <Frame CornerRadius="20" HeightRequest="50" WidthRequest="50">
                         <!-- Image -->
-                        <Image Source="d" Aspect="AspectFit" HeightRequest="100" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Image Source="k" Aspect="AspectFit" HeightRequest="50" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
                     </Frame>
                     <!--Welcome and Name-->
                     <VerticalStackLayout>
@@ -43,14 +43,14 @@
                     <VerticalStackLayout>
                         
                         
-                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame CornerRadius="20" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
                             <!--Image-->
                             <Image Source="d.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="60" WidthRequest="90" />
                         </Frame>
                         <Label Text="Cat" HorizontalOptions="Center" FontFamily="KanitRegular" />
                     </VerticalStackLayout>
                     <VerticalStackLayout>
-                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame CornerRadius="20" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
                             <Image Source="b.png" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
                         </Frame>
                         <Label Text="Popo" HorizontalOptions="Center" FontFamily="KanitRegular" />
@@ -58,7 +58,7 @@
                     
                     
                     <VerticalStackLayout>
-                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame CornerRadius="20" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
                             <Image Source="d.png" Aspect="AspectFit" HeightRequest="60" WidthRequest="100" />
                         </Frame>
                         <Label Text="Bull Dog" HorizontalOptions="Center" FontFamily="KanitRegular" />
@@ -67,7 +67,7 @@
                     
                     
                     <VerticalStackLayout>
-                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame CornerRadius="20" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
                             <Image Source="g.png" Aspect="AspectFit" HeightRequest="60" WidthRequest="100" />
                         </Frame>
                         <Label Text="Canny" HorizontalOptions="Center" FontFamily="KanitRegular" />
@@ -75,7 +75,7 @@
                     
                     
                     <VerticalStackLayout>
-                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame CornerRadius="20" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
                             <Image Source="h.png" Aspect="AspectFit" HeightRequest="60" WidthRequest="100" />
                         </Frame>
                         <Label Text="D-Dog" HorizontalOptions="Center" FontFamily="KanitRegular" />
@@ -83,7 +83,7 @@
                     
                     
                     <VerticalStackLayout>
-                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame CornerRadius="20" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
                             <Image Source="k.png" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
                         </Frame>
                         <Label Text="Bear" HorizontalOptions="Center" FontFamily="KanitRegular" />
@@ -91,7 +91,7 @@
                     
                     
                     <VerticalStackLayout>
-                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame CornerRadius="20" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
                             <Image Source="j.png" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
                         </Frame>
                         <Label Text="Eagle" HorizontalOptions="Center" FontFamily="KanitRegular" />
@@ -99,7 +99,7 @@
                     
                     
                     <VerticalStackLayout>
-                        <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame CornerRadius="20" HeightRequest="60" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center">
                             <Image Source="l.png" Aspect="Fill" HeightRequest="60" WidthRequest="100" />
                         </Frame>
                         <Label Text="Fox" HorizontalOptions="Center" FontFamily="KanitRegular" />
@@ -118,9 +118,10 @@
                     <StackLayout Spacing="10">
                         <HorizontalStackLayout Spacing="70" Grid.Row="0">
                             <HorizontalStackLayout Spacing="5">
-                                <Frame CornerRadius="20" HeightRequest="40" WidthRequest="50">
-                                    <Image Source="p" Aspect="AspectFit" HeightRequest="90" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
-                                </Frame>
+                                <Frame CornerRadius="20" HeightRequest="50" WidthRequest="50">
+                        <!-- Image -->
+                        <Image Source="p" Aspect="AspectFit" HeightRequest="50" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Frame>
                                 <VerticalStackLayout>
                                     <Label Text="KaliBoi" FontSize="Medium" FontFamily="KanitBold" />
                                     <Label Text="20M Lovers" FontFamily="GaMaamli" FontAttributes="Bold" FontSize="12" TextColor="Gray" />
@@ -136,8 +137,8 @@
                         
                         
                         <!--Feed Image view-->
-                        <Frame CornerRadius="50" HeightRequest="330" WidthRequest="330">
-                            <Image Source="p" Aspect="AspectFit" HeightRequest="900" WidthRequest="680" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Frame CornerRadius="20" HeightRequest="330" WidthRequest="330">
+                            <Image Source="img11" HeightRequest="400" WidthRequest="500" HorizontalOptions="Center" VerticalOptions="Center" />
                         </Frame>
                         <!--<HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
                  <Button Text="Like"/>
@@ -162,13 +163,14 @@
                 
                 
                 <!--Feed Two-->
-                <Frame CornerRadius="65" Grid.Row="5" BackgroundColor="LightGray">
+                <Frame CornerRadius="55" Grid.Row="5" BackgroundColor="LightGray">
                     <StackLayout Spacing="10" Padding="5">
                         <HorizontalStackLayout Spacing="70" Padding="5" Grid.Row="0">
                             <HorizontalStackLayout Spacing="5">
-                                <Frame CornerRadius="20" HeightRequest="50" WidthRequest="50">
-                                    <Image Source="r" Aspect="AspectFit" HeightRequest="150" WidthRequest="130" HorizontalOptions="Center" VerticalOptions="Center" />
-                                </Frame>
+                               <Frame CornerRadius="20" HeightRequest="50" WidthRequest="50">
+                        <!-- Image -->
+                        <Image Source="g" Aspect="AspectFit" HeightRequest="50" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Frame>
                                 <VerticalStackLayout>
                                     <Label Text="KaliBoi" FontSize="Medium" FontFamily="KanitBold" />
                                     <Label Text="20M Lovers" FontFamily="GaMaamli" FontSize="12" TextColor="Gray" />
@@ -182,8 +184,8 @@
                         </HorizontalStackLayout>
                         <Label Margin="20,0,0,0" Text="Feed discription will appear here and her so thw kogi goe to schooli  in the mor......" FontFamily="KanitRegular" />
                         <!--Feed Image view-->
-                        <Frame CornerRadius="50" HeightRequest="330" WidthRequest="330">
-                            <Image Source="r" Aspect="AspectFit" HeightRequest="900" WidthRequest="680" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Frame CornerRadius="20" HeightRequest="330" WidthRequest="330">
+                            <Image Source="img39" HeightRequest="400" WidthRequest="500" HorizontalOptions="Center" VerticalOptions="Center" />
                         </Frame>
                         <!--<HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
                  <Button Text="Like"/>
