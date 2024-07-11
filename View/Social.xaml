@@ -114,7 +114,7 @@
             <VerticalStackLayout Grid.Row="3" Spacing="10" Padding="20">
                 
                 <!--Feed One-->
-                <Frame CornerRadius="65" Grid.Row="5" BackgroundColor="LightGray">
+                <Frame CornerRadius="65" Grid.Row="5">
                     <StackLayout Spacing="10">
                         <HorizontalStackLayout Spacing="70" Grid.Row="0">
                             <HorizontalStackLayout Spacing="5">
@@ -138,7 +138,7 @@
                         
                         <!--Feed Image view-->
                         <Frame CornerRadius="20" HeightRequest="330" WidthRequest="330">
-                            <Image Source="img11" HeightRequest="400" WidthRequest="500" HorizontalOptions="Center" VerticalOptions="Center" />
+                            <Image Source="i" HeightRequest="400" WidthRequest="500" HorizontalOptions="Center" VerticalOptions="Center" />
                         </Frame>
                         <!--<HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
                  <Button Text="Like"/>
@@ -163,13 +163,13 @@
                 
                 
                 <!--Feed Two-->
-                <Frame CornerRadius="55" Grid.Row="5" BackgroundColor="LightGray">
+                <Frame CornerRadius="55" Grid.Row="5" >
                     <StackLayout Spacing="10" Padding="5">
                         <HorizontalStackLayout Spacing="70" Padding="5" Grid.Row="0">
                             <HorizontalStackLayout Spacing="5">
                                <Frame CornerRadius="20" HeightRequest="50" WidthRequest="50">
                         <!-- Image -->
-                        <Image Source="g" Aspect="AspectFit" HeightRequest="50" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Image Source="p" Aspect="AspectFit" HeightRequest="50" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
                     </Frame>
                                 <VerticalStackLayout>
                                     <Label Text="KaliBoi" FontSize="Medium" FontFamily="KanitBold" />
@@ -185,7 +185,7 @@
                         <Label Margin="20,0,0,0" Text="Feed discription will appear here and her so thw kogi goe to schooli  in the mor......" FontFamily="KanitRegular" />
                         <!--Feed Image view-->
                         <Frame CornerRadius="20" HeightRequest="330" WidthRequest="330">
-                            <Image Source="img39" HeightRequest="400" WidthRequest="500" HorizontalOptions="Center" VerticalOptions="Center" />
+                            <Image Source="n" HeightRequest="400" WidthRequest="500" HorizontalOptions="Center" VerticalOptions="Center" />
                         </Frame>
                         <!--<HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
                  <Button Text="Like"/>
