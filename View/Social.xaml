@@ -203,7 +203,7 @@
                             
                             <Button Grid.Column="1" Text="Like" BackgroundColor="Red" />
                             <Button Grid.Column="2" Text="Comment" TextColor="Black" BackgroundColor="Yellow" />
-                            <Button Grid.Column="3" Text="Share" />
+                            <Button Grid.Column="3" Text="Share" x:Name="Socialbtn" />
                         </Grid>
                     </StackLayout>
                 </Frame>
