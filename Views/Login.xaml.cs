@@ -1,4 +1,4 @@
-namespace MauiApp1;
+namespace VetPet.Views;
 
 public partial class Login : ContentPage
 {
