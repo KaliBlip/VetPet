@@ -9,7 +9,7 @@ public partial class App : Application
 		InitializeComponent();
 
 		//MainPage = new MainPage();
-		MainPage = new NavigationPage(new View.Social());
+		MainPage = new Views.Login();
 
     }
 }

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="VetPet.Views.Login" xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui" xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+	BackgroundColor="#f4f4f9">
+    <VerticalStackLayout Padding="12">
+        <Grid
+			RowSpacing="12">
+            <Grid.RowDefinitions>
+                <RowDefinition
+					Height="Auto" />
+                <RowDefinition
+					Height="Auto" />
+                <RowDefinition
+					Height="Auto" />
+                <RowDefinition
+					Height="Auto" />
+            </Grid.RowDefinitions>
+            <Frame
+				BorderColor="#f4f4f9"
+				BackgroundColor="#ebebe6"
+				CornerRadius="32"
+				Grid.Row="1"
+				HeightRequest="589"
+                >
+				<!--WidthRequest="369"-->
+                <Grid
+					RowSpacing="44">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Frame
+						Grid.Row="0"
+						BackgroundColor="White"
+						BorderColor="#ebebe6"
+						HeightRequest="48"
+						WidthRequest="305"
+						CornerRadius="32">
+                        <Button
+							Grid.Column="0"
+							CornerRadius="32"
+							BackgroundColor="Black"
+							FontAttributes="Bold"
+                            VerticalOptions="Center"
+							HorizontalOptions="Start"
+							Text="Log in"
+                            Padding="0"
+							WidthRequest="142.5"
+							HeightRequest="32" />
+                    </Frame>
+                   
+                    <VerticalStackLayout
+						Grid.Row="1"
+						Spacing="24">
+                        <Label
+					Grid.Row="1"
+					FontSize="14"
+					Text="Welcome back" />
+                        <HorizontalStackLayout
+					Grid.Row="2">
+                            <Label
+						FontSize="36"
+						FontAttributes="Bold"
+						Text="Login" />
+                            <Image
+						Source="j"
+						HeightRequest="36"
+						WidthRequest="36"
+						HorizontalOptions="End"
+						Margin="8" />
+                        </HorizontalStackLayout>
+                        <material:TextField
+							CornerRadius="16"
+							Title="Your Email" />
+                        <material:TextField
+							CornerRadius="16"
+							Title="Your Password" />
+                        <HorizontalStackLayout>
+                            <CheckBox
+								Color="Black" />
+                            <HorizontalStackLayout
+								Spacing="24"
+								Padding="24">
+                                <Label
+									FontSize="16"
+									HorizontalOptions="StartAndExpand"
+									Text="Remember me" />
+                                <Label
+									HorizontalOptions="End"
+									FontSize="16"
+                                    FontAttributes="Bold"
+									Text="Forgot Password" />
+                            </HorizontalStackLayout>
+                        </HorizontalStackLayout>
+                        <Button
+							CornerRadius="360"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+							BackgroundColor="#ff645f"
+							Text="Lets's Roll!"
+							Grid.Row="4"
+							HeightRequest="56"
+							WidthRequest="305" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+            <Frame
+				BackgroundColor="#465a54"
+				HeightRequest="194"
+				WidthRequest="369"
+				CornerRadius="32"
+				Grid.Row="2">
+                <VerticalStackLayout
+					Spacing="24"
+					HorizontalOptions="CenterAndExpand"
+					VerticalOptions="CenterAndExpand">
+                    <Label
+						FontSize="24"
+						TextColor="White"
+						Grid.Row="0"
+						FontAttributes="Bold"
+						Text="Continue with:" />
+                    <HorizontalStackLayout
+						Spacing="8"
+						Padding="0"
+						Grid.Row="1">
+                        <Button
+							CornerRadius="360"
+							WidthRequest="96.33"
+							HeightRequest="56"
+							BackgroundColor="#ebebe6"
+							TextColor="Black"
+							Text="Gooogle" />
+                        <Button
+							CornerRadius="360"
+							WidthRequest="96.33"
+							HeightRequest="56"
+							TextColor="Black"
+							BackgroundColor="#ebebe6"
+							Text="Apple" />
+                        <Button
+							CornerRadius="360"
+							WidthRequest="96.33"
+							HeightRequest="56"
+							TextColor="Black"
+							BackgroundColor="#ebebe6"
+							Text="Email" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

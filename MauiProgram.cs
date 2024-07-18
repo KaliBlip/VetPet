@@ -24,7 +24,7 @@ public static class MauiProgram
                 fonts.AddFont("GaMaamli-Regular.ttf", "GaMaamli");
 
                 fonts.AddFont("Kanit-Black.ttf", "KanitBlack");
-                fonts.AddFont("Kanit-BlackItalic.ttf", "KanitBlackItalic");
+                fonts.AddFont("Kanit-Regular.ttf", "KanitRegular");
                 fonts.AddFont("Kanit-Bold.ttf", "KanitBold");
                 fonts.AddFont("Kanit-ExtraBold.ttf", "KanitExtraBold");
                 fonts.AddFont("Kanit-ExtraBoldItalic.ttf", "KanitExtraBoldItalic");
