@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VetPet.Views.SettingsPage"
+             Title="SettingsPage">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+
+            <!-- Top Grid with Navigation and Title -->
+            <Grid Padding="2" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" /> <!-- Back button -->
+                    <ColumnDefinition Width="*" />    <!-- Greeting label -->
+                    <ColumnDefinition Width="Auto" /> <!-- Notification button -->
+                </Grid.ColumnDefinitions>
+
+                <!-- Back Button -->
+                <Button Grid.Column="0"
+                        BackgroundColor="#d0cfc8"
+                        BorderColor="#EBEBE6"
+                        CornerRadius="23"
+                        WidthRequest="50"
+                        HeightRequest="30"
+                        FontAttributes="Bold"
+                        Text="←"
+                        TextColor="Black" />
+
+                <!-- Greeting Label -->
+                <Label Grid.Column="1"
+                       Text="Settings"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       FontFamily="KanitLight"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Black" />
+
+                <!-- Notification Button -->
+                <Button Grid.Column="2"
+                        BackgroundColor="#d0cfc8"
+                        BorderColor="#EBEBE6"
+                        CornerRadius="23"
+                        WidthRequest="50"
+                        HeightRequest="30"
+                        FontAttributes="Bold"
+                        Text="≡"
+                        TextColor="Black" />
+            </Grid>
+
+            <!-- Header Section -->
+            <Frame BackgroundColor="#2D3C2D" CornerRadius="20" Padding="20" HeightRequest="120" WidthRequest="320">
+                <Grid RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Icon on the left (Row 0) -->
+                    <Label Text="&#x1F5A5;" 
+                           FontSize="32" 
+                           TextColor="White" 
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Start" 
+                           Grid.Row="0" Grid.Column="0" />
+
+                    <!-- Progress indicator on the right (Row 0) -->
+                    <Frame BackgroundColor="LightBlue" 
+                           CornerRadius="15" 
+                           HeightRequest="30" 
+                           WidthRequest="60" 
+                           VerticalOptions="Center" 
+                           HorizontalOptions="End"
+                           Grid.Row="0" Grid.Column="2">
+                        <Label Text="68%" 
+                               FontSize="14" 
+                               TextColor="White" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center" />
+                    </Frame>
+
+                    <!-- Text below the icon and progress (Row 1, spanning all columns) -->
+                    <Label Text="Security &amp; Privacy" 
+                           FontSize="24" 
+                           TextColor="White" 
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center" 
+                           Grid.Row="1" Grid.ColumnSpan="3"/>
+                </Grid>
+            </Frame>
+
+            <!-- Security Section -->
+            <Frame BackgroundColor="#d0cfc8" CornerRadius="20" Padding="10">
+                <StackLayout>
+                    <Label Text="Security" FontSize="24" FontFamily="KanitBold" />
+                    <ListView x:Name="SecurityListView" BackgroundColor="#d0cfc8" HasUnevenRows="False" SeparatorVisibility="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" Padding="10">
+                                        <Label Text="{Binding Name}" VerticalOptions="Center" />
+                                        <Switch IsToggled="{Binding IsEnabled}" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Frame>
+
+            <!-- External Accounts Section -->
+            <Frame BackgroundColor="#d0cfc8" CornerRadius="20" Padding="10">
+                <StackLayout>
+                    <Label Text="External Accounts" FontSize="20" FontAttributes="Bold" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label Text="Sign in with Apple" Grid.Row="0" />
+                        <Switch Grid.Row="0" HorizontalOptions="End" />
+
+                        <Label Text="Sign in with Google" Grid.Row="1" />
+                        <Switch Grid.Row="1" HorizontalOptions="End" />
+                    </Grid>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

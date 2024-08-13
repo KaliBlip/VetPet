@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
-            xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui"
-             x:Class="VetPet.Views.HomePage"
-             Title="HomePage">
+             x:Class="VetPet.Views.TestingPage"
+             Title="Testing Page">
     <ScrollView>
         <VerticalStackLayout Padding="12" Spacing="16">
 
@@ -17,7 +14,7 @@
 
     <!-- Back Button -->
     <Button Grid.Column="0"
-            BackgroundColor="#d0cfc8"
+            BackgroundColor="#EBEBE6"
             BorderColor="#EBEBE6"
             CornerRadius="23"
             WidthRequest="50"
@@ -38,7 +35,7 @@
 
     <!-- Notification Button -->
     <Button Grid.Column="2"
-            BackgroundColor="#d0cfc8"
+            BackgroundColor="#EBEBE6"
             BorderColor="#EBEBE6"
              CornerRadius="23"
             WidthRequest="50"
@@ -50,7 +47,7 @@
 
 
             <!-- Toggle Buttons (For her, For him) -->
-            <Frame Padding="0" CornerRadius="25" BackgroundColor="#d0cfc8" HorizontalOptions="Center">
+            <Frame Padding="0" CornerRadius="25" BackgroundColor="#f0f0f5" HorizontalOptions="Center">
                 <HorizontalStackLayout Spacing="8" Padding="4">
                     <Button Text="Market Place" FontFamily="KanitLight" BackgroundColor="Transparent" TextColor="Black" CornerRadius="20" />
                     <Button Text="Services" FontFamily="KanitLight"  BackgroundColor="Black" TextColor="White" CornerRadius="20" />
@@ -58,7 +55,7 @@
             </Frame>
 
            <!-- Promotional Banner -->
-<Frame BackgroundColor="#445751" CornerRadius="20" Padding="16" HeightRequest="180">
+<Frame BackgroundColor="#36454F" CornerRadius="20" Padding="16" HeightRequest="180">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" /> <!-- For the "80% off" text -->
@@ -67,9 +64,8 @@
 
         <Label Grid.Row="0" 
                Text="80% off" 
-               FontSize="56" 
+               FontSize="36" 
                FontAttributes="Bold" 
-               FontFamily="KanitBold"
                TextColor="White" 
                VerticalOptions="Center" />
 
@@ -90,7 +86,7 @@
             <!-- Arrow Button -->
             <Button Grid.Column="1"
                     Text="→" 
-                    BackgroundColor="#ff423c" 
+                    BackgroundColor="Red" 
                     TextColor="White" 
                     CornerRadius="20" 
                     WidthRequest="48" 
