@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VetPet.Views.HomePage"
+             Title="HomePage">
+    <ScrollView>
+    <VerticalStackLayout Padding="12">
+    
+                    <Frame
+						Grid.Row="0"
+						BackgroundColor="#ebebe6"
+						BorderColor="#ebebe6"
+						HeightRequest="48"
+						WidthRequest="305"
+						CornerRadius="20">
+
+                        <!--  -->
+                       
+
+                            <HorizontalStackLayout Margin="0,0,10,0">
+                             <Button
+							CornerRadius="20"
+							BackgroundColor="transparent"
+							FontAttributes="Bold"
+                            VerticalOptions="Center"
+							HorizontalOptions="Start"
+							Text="Market Place"
+                            TextColor="Black"
+                            Padding="0"
+							WidthRequest="142.5"
+							HeightRequest="10" />
+
+                             <Button
+							CornerRadius="20"
+							BackgroundColor="black"
+							FontAttributes="Bold"
+                            VerticalOptions="Center"
+							HorizontalOptions="End"
+							Text="Services"
+                            TextColor="White"
+                            Padding="0"
+							WidthRequest="142.5"
+							HeightRequest="10" />
+
+                           
+                            </HorizontalStackLayout>
+                            
+                    </Frame>
+
+        <Grid
+			RowSpacing="12">
+            <Grid.RowDefinitions>
+                <RowDefinition
+					Height="Auto" />
+                <RowDefinition
+					Height="Auto" />
+                <RowDefinition
+					Height="Auto" />
+                <RowDefinition
+					Height="Auto" />
+            </Grid.RowDefinitions>
+            <Frame
+				BorderColor="#f4f4f9"
+				BackgroundColor="#ebebe6"
+				CornerRadius="32"
+				Grid.Row="1"
+				HeightRequest="520"
+                >
+				<!--WidthRequest="369"-->
+                <Grid
+					RowSpacing="44">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Frame
+						Grid.Row="0"
+						BackgroundColor="White"
+						BorderColor="#ebebe6"
+						HeightRequest="200"
+						WidthRequest="305"
+						CornerRadius="20">
+                        <Image 
+                        Source="dotnet_bot.png"
+                        />
+                        
+                            
+                    </Frame>
+</Grid>
+                    </Frame>
+
+                    </Grid>
+
+
+
+
+                    </VerticalStackLayout>
+                    </ScrollView>
+</ContentPage>

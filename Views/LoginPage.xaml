@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	x:Class="VetPet.Views.Login" xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui" xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+	x:Class="VetPet.Views.LoginPage" xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui" xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
 	BackgroundColor="#f4f4f9">
+
+	<ScrollView>
     <VerticalStackLayout Padding="12">
         <Grid
 			RowSpacing="12">
@@ -20,7 +22,7 @@
 				BackgroundColor="#ebebe6"
 				CornerRadius="32"
 				Grid.Row="1"
-				HeightRequest="589"
+				HeightRequest="520"
                 >
 				<!--WidthRequest="369"-->
                 <Grid
@@ -49,23 +51,23 @@
 						BorderColor="#ebebe6"
 						HeightRequest="48"
 						WidthRequest="305"
-						CornerRadius="32">
+						CornerRadius="20">
                         <Button
 							Grid.Column="0"
-							CornerRadius="32"
-							BackgroundColor="Black"
+							CornerRadius="20"
+							BackgroundColor="black"
 							FontAttributes="Bold"
                             VerticalOptions="Center"
 							HorizontalOptions="Start"
 							Text="Log in"
                             Padding="0"
 							WidthRequest="142.5"
-							HeightRequest="32" />
+							HeightRequest="10" />
                     </Frame>
                    
                     <VerticalStackLayout
 						Grid.Row="1"
-						Spacing="24">
+						Spacing="16">
                         <Label
 					Grid.Row="1"
 					FontSize="14"
@@ -74,6 +76,7 @@
 					Grid.Row="2">
                             <Label
 						FontSize="36"
+						FontFamily="KanitBold"
 						FontAttributes="Bold"
 						Text="Login" />
                             <Image
@@ -89,32 +92,39 @@
                         <material:TextField
 							CornerRadius="16"
 							Title="Your Password" />
-                        <HorizontalStackLayout>
-                            <CheckBox
+
+							<HorizontalStackLayout
+							Spacing="50"
+							Padding="10"
+							>
+							 <HorizontalStackLayout
+							 Spacing="65">
+                            <material:CheckBox
+							Text="Your Password"
+							TextFontSize="15"
 								Color="Black" />
-                            <HorizontalStackLayout
-								Spacing="24"
-								Padding="24">
+								
+
+                            <HorizontalStackLayout>
                                 <Label
-									FontSize="16"
-									HorizontalOptions="StartAndExpand"
-									Text="Remember me" />
-                                <Label
+									Text="Forgot Password?" 
 									HorizontalOptions="End"
-									FontSize="16"
-                                    FontAttributes="Bold"
-									Text="Forgot Password" />
+									FontSize="15"
+                                    FontAttributes="Bold"/>
+
                             </HorizontalStackLayout>
                         </HorizontalStackLayout>
+							</HorizontalStackLayout>
+                       
                         <Button
-							CornerRadius="360"
-                            TextColor="Black"
-                            FontAttributes="Bold"
-							BackgroundColor="#ff645f"
 							Text="Lets's Roll!"
+							CornerRadius="20"
+                            FontAttributes="Bold"
+							BackgroundColor="#ff6a5f"
 							Grid.Row="4"
 							HeightRequest="56"
 							WidthRequest="305" />
+
                     </VerticalStackLayout>
                 </Grid>
             </Frame>
@@ -129,39 +139,41 @@
 					HorizontalOptions="CenterAndExpand"
 					VerticalOptions="CenterAndExpand">
                     <Label
+						Text="Continue with:" 
 						FontSize="24"
-						TextColor="White"
 						Grid.Row="0"
 						FontAttributes="Bold"
-						Text="Continue with:" />
+						TextColor="white"/>
                     <HorizontalStackLayout
 						Spacing="8"
 						Padding="0"
 						Grid.Row="1">
                         <Button
-							CornerRadius="360"
+							Text="Gooogle" 
+							CornerRadius="20"
 							WidthRequest="96.33"
 							HeightRequest="56"
-							BackgroundColor="#ebebe6"
 							TextColor="Black"
-							Text="Gooogle" />
+							BackgroundColor="#ebebe6"/>
                         <Button
-							CornerRadius="360"
+							Text="Apple" 
+							CornerRadius="20"
 							WidthRequest="96.33"
 							HeightRequest="56"
 							TextColor="Black"
-							BackgroundColor="#ebebe6"
-							Text="Apple" />
+							BackgroundColor="#ebebe6"/>
                         <Button
-							CornerRadius="360"
+							Text="Email" 
+							CornerRadius="20"
 							WidthRequest="96.33"
 							HeightRequest="56"
 							TextColor="Black"
 							BackgroundColor="#ebebe6"
-							Text="Email" />
+							BorderColor="AliceBlue"/>
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
             </Frame>
         </Grid>
     </VerticalStackLayout>
+	</ScrollView>
 </ContentPage>

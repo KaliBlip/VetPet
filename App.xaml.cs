@@ -9,7 +9,7 @@ public partial class App : Application
 		InitializeComponent();
 
 		//MainPage = new MainPage();
-		MainPage = new Views.Login();
+		MainPage = new Views.HomePage();
 
     }
 }

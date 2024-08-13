@@ -1,8 +1,8 @@
 namespace VetPet.Views;
 
-public partial class Login : ContentPage
+public partial class HomePage : ContentPage
 {
-	public Login()
+	public HomePage()
 	{
 		InitializeComponent();
 	}
