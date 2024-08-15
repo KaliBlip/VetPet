@@ -19,7 +19,7 @@
     <Button Grid.Column="0"
             BackgroundColor="#d0cfc8"
             BorderColor="#EBEBE6"
-            CornerRadius="23"
+            CornerRadius="15"
             WidthRequest="50"
             HeightRequest="30"
             FontAttributes="Bold"
@@ -28,7 +28,7 @@
 
     <!-- Greeting Label -->
     <Label Grid.Column="1"
-           Text="Hello Hristo"
+           Text="Hello VetPet"
            FontSize="18"
            FontAttributes="Bold"
            FontFamily="KanitLight"
@@ -37,27 +37,26 @@
            TextColor="Black" />
 
     <!-- Notification Button -->
-    <Button Grid.Column="2"
+    <ImageButton Grid.Column="2"
             BackgroundColor="#d0cfc8"
             BorderColor="#EBEBE6"
-             CornerRadius="23"
+             CornerRadius="15"
+             Source="dotnet_bot"
             WidthRequest="50"
-            HeightRequest="30"
-            FontAttributes="Bold"
-            Text="🔔"
-            TextColor="Black" />
+            HeightRequest="50"/>
 </Grid>
 
 
             <!-- Toggle Buttons (For her, For him) -->
-            <Frame Padding="0" CornerRadius="25" BackgroundColor="#d0cfc8" HorizontalOptions="Center">
+            <Frame Padding="12" CornerRadius="25" BackgroundColor="#d0cfc8" HorizontalOptions="Center">
                 <HorizontalStackLayout Spacing="8" Padding="4">
-                    <Button Text="Market Place" FontFamily="KanitLight" BackgroundColor="Transparent" TextColor="Black" CornerRadius="20" />
-                    <Button Text="Services" FontFamily="KanitLight"  BackgroundColor="Black" TextColor="White" CornerRadius="20" />
+                    <Button Text="Market Place" x:Name="Marketplace" FontFamily="KanitLight" BackgroundColor="white" TextColor="Black" CornerRadius="15" />
+                    <Button Text="Services" x:Name="Services" FontFamily="KanitLight" FontAttributes="Bold"  BackgroundColor="Black" TextColor="White" CornerRadius="15" />
                 </HorizontalStackLayout>
             </Frame>
 
            <!-- Promotional Banner -->
+
 <Frame BackgroundColor="#445751" CornerRadius="20" Padding="16" HeightRequest="180">
     <Grid>
         <Grid.RowDefinitions>
@@ -69,7 +68,7 @@
                Text="80% off" 
                FontSize="56" 
                FontAttributes="Bold" 
-               FontFamily="KanitBold"
+               FontFamily="GaMaamli-Regular"  
                TextColor="White" 
                VerticalOptions="Center" />
 
@@ -84,6 +83,7 @@
                    Text="Orders over $200" 
                    FontSize="16" 
                    TextColor="White" 
+                   FontFamily="KanitBlack"
                    VerticalOptions="Center" 
                    HorizontalOptions="Start" />
 
@@ -103,9 +103,9 @@
 
 
 
+    <!-- New Arrivals Text at the Beginning -->
 
-
-            <Grid ColumnSpacing="8">
+            <Grid ColumnSpacing="8" Padding="0,15,0,0">
     <!-- Define two columns: one for the text and the other for the button -->
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" /> <!-- Text takes up available space -->
@@ -114,7 +114,7 @@
 
     <!-- New Arrivals Text at the Beginning -->
     <VerticalStackLayout Grid.Column="0">
-        <Label Text="New Arrivals" FontSize="18" FontAttributes="Bold" />
+        <Label Text="New Arrivals" FontSize="18" FontFamily="Kanit-" FontAttributes="Bold" />
         <Label Text="6,368 Items" FontSize="14" TextColor="Gray" />
     </VerticalStackLayout>
 
@@ -133,21 +133,21 @@
 
 
             <!-- Product Carousel -->
-            <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <HorizontalStackLayout Spacing="16">
-                    <Frame WidthRequest="150" HeightRequest="200" BackgroundColor="#f0f0f5" CornerRadius="20">
+            <ScrollView Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Padding="0,0,0,15">
+                <HorizontalStackLayout Spacing="10">
+                    <Frame WidthRequest="150" HeightRequest="200" BorderColor="Transparent" BackgroundColor="#d0cfc8" CornerRadius="20">
                         <VerticalStackLayout>
                             <Image Source="dotnet_bot.png" Aspect="AspectFit" HeightRequest="120" />
                             <Label Text="Product 1" HorizontalOptions="Center" />
                         </VerticalStackLayout>
                     </Frame>
-                    <Frame WidthRequest="150" HeightRequest="200" BackgroundColor="#f0f0f5" CornerRadius="20">
+                    <Frame WidthRequest="150" HeightRequest="200" BackgroundColor="#d0cfc8" CornerRadius="20">
                         <VerticalStackLayout>
                             <Image Source="dotnet_bot.png" Aspect="AspectFit" HeightRequest="120" />
                             <Label Text="Product 2" HorizontalOptions="Center" />
                         </VerticalStackLayout>
                     </Frame>
-                    <Frame WidthRequest="150" HeightRequest="200" BackgroundColor="#f0f0f5" CornerRadius="20">
+                    <Frame WidthRequest="150" HeightRequest="200" BackgroundColor="#d0cfc8" CornerRadius="20">
                         <VerticalStackLayout>
                             <Image Source="dotnet_bot.png" Aspect="AspectFit" HeightRequest="120" />
                             <Label Text="Product 3" HorizontalOptions="Center" />
@@ -155,6 +155,22 @@
                     </Frame>
                 </HorizontalStackLayout>
             </ScrollView>
+
+
+
+            <CarouselView ItemsLayout="HorizontalList">
+    <CarouselView.ItemTemplate>
+        <DataTemplate>
+            <Frame WidthRequest="150" HeightRequest="200" BorderColor="Transparent" BackgroundColor="#d0cfc8" CornerRadius="20">
+                <VerticalStackLayout>
+                    <Image Source="dotnet_bot.png" Aspect="AspectFit" HeightRequest="120" />
+                            <Label Text="Product 3" HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Frame>
+        </DataTemplate>
+    </CarouselView.ItemTemplate>
+</CarouselView>
+
 
             
 

@@ -1,49 +1,57 @@
-namespace VetPet.Views;
+using Microsoft.Maui.Controls;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-	public class SecurityOption : INotifyPropertyChanged
+namespace VetPet.Views
 {
-    private bool isEnabled;
-
-    public string Name { get; set; }
-
-    public bool IsEnabled
+    public partial class SettingsPage : ContentPage
     {
-        get => isEnabled;
-        set
+        public SettingsPage()
         {
-            if (isEnabled != value)
+            InitializeComponent();
+
+            var securityOptions = new List<SecurityOption>
             {
-                isEnabled = value;
-                OnPropertyChanged();
-            }
+                new SecurityOption { Name = "Push Notifications", IsEnabled = true },
+                new SecurityOption { Name = "Devices", IsEnabled =  true },
+                new SecurityOption { Name = "Gambling block", IsEnabled =  true },
+                new SecurityOption { Name = "Hide Balances", IsEnabled = true }
+            };
+
+            SecurityListView.ItemsSource = securityOptions;
+        }
+
+        private async void BackButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new HomePage()); // Navigate back to the previous page in the stack
         }
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    public class SecurityOption : INotifyPropertyChanged
     {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-}
+        private bool isEnabled;
 
-public partial class SettingsPage : ContentPage
-{
+        public string Name { get; set; }
 
-	public SettingsPage()
-	{
-		InitializeComponent();
-
-		 var securityOptions = new List<SecurityOption>
+        public bool IsEnabled
         {
-            new SecurityOption { Name = "Push Notifications", IsEnabled = true },
-            new SecurityOption { Name = "Devices", IsEnabled =  true },
-            new SecurityOption { Name = "Gambling block", IsEnabled =  true },
-            new SecurityOption { Name = "Hide Balances", IsEnabled = true }
-        };
+            get => isEnabled;
+            set
+            {
+                if (isEnabled != value)
+                {
+                    isEnabled = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        SecurityListView.ItemsSource = securityOptions;
-	}
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
 }
