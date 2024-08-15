@@ -7,7 +7,6 @@
              Title="HomePage">
     <ScrollView>
         <VerticalStackLayout Padding="12" Spacing="16">
-
            <Grid Padding="2" ColumnSpacing="0">
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto" /> <!-- Back button -->
@@ -15,16 +14,14 @@
         <ColumnDefinition Width="Auto" /> <!-- Notification button -->
     </Grid.ColumnDefinitions>
 
-    <!-- Back Button -->
-    <Button Grid.Column="0"
+    <!-- Account / Profile Image Button -->
+ <ImageButton Grid.Column="0"
             BackgroundColor="#d0cfc8"
             BorderColor="#EBEBE6"
-            CornerRadius="15"
+             CornerRadius="15"
+             Source="dotnet_bot"
             WidthRequest="50"
-            HeightRequest="30"
-            FontAttributes="Bold"
-            Text="←"
-            TextColor="Black" />
+            HeightRequest="50"/>
 
     <!-- Greeting Label -->
     <Label Grid.Column="1"
@@ -36,14 +33,18 @@
            VerticalOptions="Center"
            TextColor="Black" />
 
-    <!-- Notification Button -->
-    <ImageButton Grid.Column="2"
+    <!-- Settings Button -->
+   <Button Grid.Column="2"
             BackgroundColor="#d0cfc8"
             BorderColor="#EBEBE6"
-             CornerRadius="15"
-             Source="dotnet_bot"
+            CornerRadius="15"
             WidthRequest="50"
-            HeightRequest="50"/>
+            HeightRequest="30"
+            FontAttributes="Bold"
+            Text="SS"
+            x:Name="SettingsPageBtn"
+            Clicked="onSettingsPageClicked"
+            TextColor="Black" />
 </Grid>
 
 

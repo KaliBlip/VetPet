@@ -101,7 +101,7 @@
             <Frame BackgroundColor="#d0cfc8" CornerRadius="20" Padding="10">
                 <StackLayout>
                     <Label Text="Security" FontSize="24" FontFamily="KanitBold" />
-                    <ListView x:Name="SecurityListView" BackgroundColor="#d0cfc8" HasUnevenRows="False" SeparatorVisibility="None">
+                    <ListView x:Name="SecurityListView" BackgroundColor="#d0cfc8" HasUnevenRows="False" >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -116,24 +116,26 @@
                 </StackLayout>
             </Frame>
 
+
             <!-- External Accounts Section -->
             <Frame BackgroundColor="#d0cfc8" CornerRadius="20" Padding="10">
                 <StackLayout>
-                    <Label Text="External Accounts" FontSize="20" FontAttributes="Bold" />
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <Label Text="Sign in with Apple" Grid.Row="0" />
-                        <Switch Grid.Row="0" HorizontalOptions="End" />
-
-                        <Label Text="Sign in with Google" Grid.Row="1" />
-                        <Switch Grid.Row="1" HorizontalOptions="End" />
-                    </Grid>
+                    <Label Text="External Accounts" FontSize="24" FontFamily="KanitBold" />
+                    <ListView x:Name="ExternalAccountListView" BackgroundColor="#d0cfc8" HasUnevenRows="False" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" Padding="10">
+                                        <Label Text="{Binding Name}" VerticalOptions="Center" />
+                                        <Switch IsToggled="{Binding IsEnabled}" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                 </StackLayout>
             </Frame>
+
 
         </StackLayout>
     </ScrollView>

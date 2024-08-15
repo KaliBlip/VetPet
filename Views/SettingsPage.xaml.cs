@@ -20,6 +20,17 @@ namespace VetPet.Views
             };
 
             SecurityListView.ItemsSource = securityOptions;
+
+
+            var externalAccountOptions = new List<ExternalAccountOption>
+            {
+                new ExternalAccountOption { Name = "Sign in with Apple", IsEnabled = true },
+                new ExternalAccountOption { Name = "Sign in with Google", IsEnabled =  true },
+            };
+
+            ExternalAccountListView.ItemsSource = externalAccountOptions;
+
+            
         }
 
         private async void BackButton_Clicked(object sender, EventArgs e)
@@ -47,6 +58,37 @@ namespace VetPet.Views
             }
         }
 
+        
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    public class ExternalAccountOption : INotifyPropertyChanged
+    {
+        private bool isEnabled;
+
+        public string Name { get; set; }
+
+        public bool IsEnabled
+        {
+            get => isEnabled;
+            set
+            {
+                if (isEnabled != value)
+                {
+                    isEnabled = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -55,3 +97,5 @@ namespace VetPet.Views
         }
     }
 }
+
+
