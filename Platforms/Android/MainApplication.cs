@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace VetPet;
+namespace GreenChat;
 
 [Application]
 public class MainApplication : MauiApplication

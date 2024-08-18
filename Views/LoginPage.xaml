@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	x:Class="VetPet.Views.LoginPage" xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui" xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
-	BackgroundColor="#f4f4f9">
+	x:Class="GreenChat.Views.LoginPage" xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui" xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+	BackgroundColor="#f4f4f9"
+	Title="Login">
 
 	<ScrollView>
-    <VerticalStackLayout Padding="12">
+    <VerticalStackLayout Padding="10">
         <Grid
 			RowSpacing="12">
             <Grid.RowDefinitions>
@@ -45,25 +46,13 @@
                         <RowDefinition
 							Height="Auto" />
                     </Grid.RowDefinitions>
-                    <Frame
-						Grid.Row="0"
-						BackgroundColor="White"
-						BorderColor="#ebebe6"
-						HeightRequest="48"
-						WidthRequest="305"
-						CornerRadius="20">
-                        <Button
-							Grid.Column="0"
-							CornerRadius="20"
-							BackgroundColor="black"
-							FontAttributes="Bold"
-                            VerticalOptions="Center"
-							HorizontalOptions="Start"
-							Text="Log in"
-                            Padding="0"
-							WidthRequest="142.5"
-							HeightRequest="10" />
-                    </Frame>
+                     <Frame Padding="12" CornerRadius="25" BackgroundColor="#d0cfc8" HorizontalOptions="Center">
+                <HorizontalStackLayout Spacing="8" Padding="4">
+                    <Button Text="Login" x:Name="LoginPBtn" FontFamily="KanitLight" BackgroundColor="white" TextColor="Black" CornerRadius="15" />
+                    <Button Text="Sign Up" x:Name="SignUpPBtn" Clicked="SignUpPBtn_Clicked" FontFamily="KanitLight" FontAttributes="Bold"  BackgroundColor="Black" TextColor="White" CornerRadius="15" />
+                </HorizontalStackLayout>
+            </Frame>
+
                    
                     <VerticalStackLayout
 						Grid.Row="1"
@@ -118,6 +107,8 @@
                        
                         <Button
 							Text="Lets's Roll!"
+							x:Name="LoginBtn"
+							Clicked="LoginBtn_Clicked"
 							CornerRadius="20"
                             FontAttributes="Bold"
 							BackgroundColor="#ff6a5f"

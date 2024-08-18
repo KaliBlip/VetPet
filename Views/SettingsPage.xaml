@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VetPet.Views.SettingsPage"
-             Title="SettingsPage">
+             Title="Settings">
 
     <ScrollView>
         <StackLayout Padding="20" Spacing="20">
@@ -17,6 +17,8 @@
 
                 <!-- Back Button -->
                 <Button Grid.Column="0"
+                x:Name="BackButton"
+                Clicked="BackButton_Clicked"
                         BackgroundColor="#d0cfc8"
                         BorderColor="#EBEBE6"
                         CornerRadius="23"
@@ -49,7 +51,7 @@
             </Grid>
 
             <!-- Header Section -->
-            <Frame BackgroundColor="#2D3C2D" CornerRadius="20" Padding="20" HeightRequest="120" WidthRequest="320">
+            <Frame BackgroundColor="#2D3C2D" CornerRadius="20" Padding="20" HeightRequest="120" >
                 <Grid RowSpacing="5">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -90,7 +92,7 @@
                            FontSize="24" 
                            TextColor="White" 
                            VerticalOptions="Center" 
-                           HorizontalOptions="Center" 
+                           HorizontalOptions="Start"  
                            Grid.Row="1" Grid.ColumnSpan="3"/>
                 </Grid>
             </Frame>
@@ -99,7 +101,7 @@
             <Frame BackgroundColor="#d0cfc8" CornerRadius="20" Padding="10">
                 <StackLayout>
                     <Label Text="Security" FontSize="24" FontFamily="KanitBold" />
-                    <ListView x:Name="SecurityListView" BackgroundColor="#d0cfc8" HasUnevenRows="False" SeparatorVisibility="None">
+                    <ListView x:Name="SecurityListView" BackgroundColor="#d0cfc8" HasUnevenRows="False" >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -114,24 +116,26 @@
                 </StackLayout>
             </Frame>
 
+
             <!-- External Accounts Section -->
             <Frame BackgroundColor="#d0cfc8" CornerRadius="20" Padding="10">
                 <StackLayout>
-                    <Label Text="External Accounts" FontSize="20" FontAttributes="Bold" />
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <Label Text="Sign in with Apple" Grid.Row="0" />
-                        <Switch Grid.Row="0" HorizontalOptions="End" />
-
-                        <Label Text="Sign in with Google" Grid.Row="1" />
-                        <Switch Grid.Row="1" HorizontalOptions="End" />
-                    </Grid>
+                    <Label Text="External Accounts" FontSize="24" FontFamily="KanitBold" />
+                    <ListView x:Name="ExternalAccountListView" BackgroundColor="#d0cfc8" HasUnevenRows="False" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" Padding="10">
+                                        <Label Text="{Binding Name}" VerticalOptions="Center" />
+                                        <Switch IsToggled="{Binding IsEnabled}" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                 </StackLayout>
             </Frame>
+
 
         </StackLayout>
     </ScrollView>

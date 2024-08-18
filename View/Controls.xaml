@@ -4,7 +4,7 @@
              
              xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui"
              
-             x:Class="VetPet.View.Controls"
+             x:Class="GreenChat.View.Controls"
              Title="Controls">
 
     <uranium:GridLayout Margin="20"

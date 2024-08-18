@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
-             x:Class="VetPet.Views.SignUpPage"
+             x:Class="GreenChat.Views.SignUpPage"
              Title="Sign Up">
     <ScrollView>
-    <VerticalStackLayout Padding="12">
+    <VerticalStackLayout Padding="12,0,12,0">
         <Grid
 			RowSpacing="12">
             <Grid.RowDefinitions>
@@ -46,46 +46,12 @@
                         <RowDefinition
 							Height="Auto" />
                     </Grid.RowDefinitions>
-                    <Frame
-						Grid.Row="0"
-						BackgroundColor="White"
-						BorderColor="#ebebe6"
-						HeightRequest="48"
-						WidthRequest="305"
-						CornerRadius="20">
-
-                        <!--  -->
-                       
-
-                            <HorizontalStackLayout Margin="0,0,10,0">
-                             <Button
-							CornerRadius="20"
-							BackgroundColor="transparent"
-							FontAttributes="Bold"
-                            VerticalOptions="Center"
-							HorizontalOptions="Start"
-							Text="Login"
-                            TextColor="Black"
-                            Padding="0"
-							WidthRequest="142.5"
-							HeightRequest="10" />
-
-                             <Button
-							CornerRadius="20"
-							BackgroundColor="black"
-							FontAttributes="Bold"
-                            VerticalOptions="Center"
-							HorizontalOptions="End"
-							Text="Sign Up"
-                            TextColor="White"
-                            Padding="0"
-							WidthRequest="142.5"
-							HeightRequest="10" />
-
-                           
-                            </HorizontalStackLayout>
-                            
-                    </Frame>
+                   <Frame Padding="12" CornerRadius="25" BackgroundColor="#d0cfc8" HorizontalOptions="Center">
+                <HorizontalStackLayout Spacing="8" Padding="0">
+                    <Button Text="Sign Up" x:Name="SignUpPBtn" FontFamily="KanitLight" FontAttributes="Bold"  BackgroundColor="Black" TextColor="White" CornerRadius="15" />
+                    <Button Text="Login" x:Name="LoginPBtn" Clicked="LoginPBtn_Clicked" FontFamily="KanitLight" BackgroundColor="white" TextColor="Black" CornerRadius="15" />
+                </HorizontalStackLayout>
+            </Frame>
                    
                     <VerticalStackLayout
 						Grid.Row="1"
@@ -125,9 +91,13 @@
                         </HorizontalStackLayout>
                        
                         <Button
-							Text="Lets's Roll!"
+							Text="Create Account ←←←"
 							CornerRadius="20"
+							x:Name="SignUpBtn"
+							Clicked="SignUpBtn_Clicked"
                             FontAttributes="Bold"
+							TextColor="Black"
+							FontFamily="Kanit-"
 							BackgroundColor="#ff6a5f"
 							Grid.Row="4"
 							HeightRequest="56"
@@ -148,7 +118,7 @@
 					VerticalOptions="CenterAndExpand">
 
 <HorizontalStackLayout
-Spacing="70">
+Spacing="65">
 
 <Label
 						Text="Already have an account?" 
@@ -161,7 +131,7 @@ Spacing="70">
                         <Button 
                         HorizontalOptions="End"
                         VerticalOptions="Center"
-                        WidthRequest="70"
+                        WidthRequest="75"
                         FontFamily="KanitBold"
                         FontAttributes="Bold"
                         FontSize="Header"

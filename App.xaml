@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
 
-             xmlns:local="clr-namespace:VetPet"
-             x:Class="VetPet.App">
+             xmlns:local="clr-namespace:GreenChat"
+             x:Class="GreenChat.App">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

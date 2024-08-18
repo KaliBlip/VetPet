@@ -21,7 +21,7 @@
                 <HorizontalStackLayout Spacing="5">
                     <Frame CornerRadius="20" HeightRequest="50" WidthRequest="50">
                         <!-- Image -->
-                        <Image Source="k" Aspect="AspectFit" HeightRequest="50" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <ImageButton Source="k" x:Name="ProfilePicture" Clicked="ProfilePicture_Clicked" Aspect="AspectFit" HeightRequest="50" WidthRequest="180" HorizontalOptions="Center" VerticalOptions="Center" />
                     </Frame>
                     <!--Welcome and Name-->
                     <VerticalStackLayout>

@@ -4,7 +4,7 @@
              
              xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
 
-             x:Class="VetPet.SignIn">
+             x:Class="GreenChat.SignIn">
     
     
     <Grid Padding="20">
@@ -24,7 +24,7 @@
         </Grid.ColumnDefinitions>
 
         <Label 
-        Text="VetPet"
+        Text="GreenChat"
         FontSize="36"
         TextColor="#1E73FF"
         HorizontalOptions="Center"
@@ -32,7 +32,7 @@
         Margin="0,40,0,40"/>
 
         <Label Grid.Row="0"
-                Text="VetPet"
+                Text="GreenChat"
                 FontSize="36"
                 TextColor="#1E73FF"
                 HorizontalOptions="Center"

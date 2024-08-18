@@ -2,7 +2,7 @@
 using UraniumUI;
 
 
-namespace VetPet;
+namespace GreenChat;
 
 public static class MauiProgram
 {
