@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace VetPet;
+namespace GreenChat;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

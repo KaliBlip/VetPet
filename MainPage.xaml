@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="VetPet.MainPage">
+             x:Class="GreenChat.MainPage">
 
     <Grid Padding="20">
         <Grid.RowDefinitions>
@@ -18,7 +18,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         
-        <Label Grid.Row="0" Text="VetPet" FontSize="36" TextColor="#1E73FF" HorizontalOptions="Center" VerticalOptions="End" Margin="0,40,0,40"/>
+        <Label Grid.Row="0" Text="GreenChat" FontSize="36" TextColor="#1E73FF" HorizontalOptions="Center" VerticalOptions="End" Margin="0,40,0,40"/>
 
         <Entry Grid.Row="1" Placeholder="Enter Your Name" x:Name="NameEntry" Margin="0,10,0,10"/>
         <Entry Grid.Row="2" Placeholder="Enter Your Email" x:Name="EmailEntry" Keyboard="Email" Margin="0,10,0,10"/>

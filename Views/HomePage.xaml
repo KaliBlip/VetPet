@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
             xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui"
-             x:Class="VetPet.Views.HomePage"
-             Title="Home">
+             x:Class="GreenChat.Views.HomePage"
+             Title="GreenChat">
+
+
+
+
+
+
     <ScrollView>
-        <VerticalStackLayout Padding="12" Spacing="16">
+        <VerticalStackLayout Padding="10" Spacing="16">
            <Grid Padding="2" ColumnSpacing="0">
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto" /> <!-- Back button -->
@@ -25,7 +31,7 @@
 
     <!-- Greeting Label -->
     <Label Grid.Column="1"
-           Text="Hello VetPet"
+           Text="Hello GreenChat"
            FontSize="18"
            FontAttributes="Bold"
            FontFamily="KanitLight"
@@ -91,6 +97,8 @@
             <!-- Arrow Button -->
             <Button Grid.Column="1"
                     Text="→" 
+                    x:Name="SocialBtn"
+                    Clicked="SocialBtn_Clicked" 
                     BackgroundColor="#ff423c" 
                     TextColor="White" 
                     CornerRadius="20" 
@@ -138,13 +146,13 @@
                 <HorizontalStackLayout Spacing="10">
                     <Frame WidthRequest="150" HeightRequest="200" BorderColor="Transparent" BackgroundColor="#d0cfc8" CornerRadius="20">
                         <VerticalStackLayout>
-                            <Image Source="dotnet_bot.png" Aspect="AspectFit" HeightRequest="120" />
+                            <Image Source="i.png" Aspect="AspectFit" HeightRequest="120" />
                             <Label Text="Product 1" HorizontalOptions="Center" />
                         </VerticalStackLayout>
                     </Frame>
                     <Frame WidthRequest="150" HeightRequest="200" BackgroundColor="#d0cfc8" CornerRadius="20">
                         <VerticalStackLayout>
-                            <Image Source="dotnet_bot.png" Aspect="AspectFit" HeightRequest="120" />
+                            <Image Source="r.png" Aspect="AspectFit" HeightRequest="120" />
                             <Label Text="Product 2" HorizontalOptions="Center" />
                         </VerticalStackLayout>
                     </Frame>
@@ -157,25 +165,6 @@
                 </HorizontalStackLayout>
             </ScrollView>
 
-
-
-            <CarouselView ItemsLayout="HorizontalList">
-    <CarouselView.ItemTemplate>
-        <DataTemplate>
-            <Frame WidthRequest="150" HeightRequest="200" BorderColor="Transparent" BackgroundColor="#d0cfc8" CornerRadius="20">
-                <VerticalStackLayout>
-                    <Image Source="dotnet_bot.png" Aspect="AspectFit" HeightRequest="120" />
-                            <Label Text="Product 3" HorizontalOptions="Center" />
-                </VerticalStackLayout>
-            </Frame>
-        </DataTemplate>
-    </CarouselView.ItemTemplate>
-</CarouselView>
-
-
-            
-
-            
 
         </VerticalStackLayout>
     </ScrollView>

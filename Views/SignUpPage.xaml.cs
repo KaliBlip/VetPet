@@ -1,4 +1,4 @@
-namespace VetPet.Views;
+namespace GreenChat.Views;
 
 public partial class SignUpPage : ContentPage
 {

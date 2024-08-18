@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace VetPet.Views
+namespace GreenChat.Views
 {
     public partial class SettingsPage : ContentPage
     {

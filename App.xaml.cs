@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace VetPet;
+namespace GreenChat;
 
 public partial class App : Application
 {
@@ -10,12 +10,9 @@ public partial class App : Application
 
 		//MainPage = new MainPage();
 		// MainPage = new Views.SignUpPage();
-		MainPage = new Views.LoginPage();
+		MainPage = new TabViews.SocialTabs();
 		// MainPage = new Views.HomePage();
 		// MainPage = new Views.SettingsPage();
-
-
-
 
     }
 }

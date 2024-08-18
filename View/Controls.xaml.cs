@@ -1,4 +1,4 @@
-namespace VetPet.View;
+namespace GreenChat.View;
 
 public partial class Controls : ContentPage
 {

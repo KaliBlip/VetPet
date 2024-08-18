@@ -1,4 +1,4 @@
-﻿namespace VetPet;
+﻿namespace GreenChat;
 
 public partial class MainPage : ContentPage
 {

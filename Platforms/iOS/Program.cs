@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace VetPet;
+namespace GreenChat;
 
 public class Program
 {

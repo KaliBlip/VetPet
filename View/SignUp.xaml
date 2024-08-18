@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
-	x:Class="VetPet.SignUp"
+	x:Class="GreenChat.SignUp"
 	BackgroundColor="White">
     <Grid
 		Padding="20">
@@ -29,7 +29,7 @@
 				Width="*" />
         </Grid.ColumnDefinitions>
         <Label
-			Text="VetPet"
+			Text="GreenChat"
 			FontSize="50"
 			FontFamily="GaMaamli"
 			TextColor="#1E73FF"
