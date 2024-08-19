@@ -16,7 +16,7 @@ public partial class HomePage : ContentPage
 
 	private async void SocialBtn_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushModalAsync(new View.Social()); // Navigate to the Settings Page
+        await Navigation.PushModalAsync(new SocialPage()); // Navigate to the Settings Page
     }
 
 

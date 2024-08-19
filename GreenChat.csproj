@@ -118,16 +118,10 @@
 	  <Compile Update="Views/SignUpPage.xaml.cs">
 	    <DependentUpon>SignUpPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="View\Social.xaml.cs">
-	    <DependentUpon>Social.xaml</DependentUpon>
-	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="View\Controls.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Social.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
